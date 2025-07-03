@@ -1,0 +1,283 @@
+﻿@model DummyUIApp.Models.SignupViewModel
+@{
+    ViewData["Title"] = "Signup";
+}
+
+<h2>Signup</h2>
+
+<form method="post" class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Username" class="form-label"></label>
+        <input asp-for="Username" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Password" class="form-label"></label>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Login" class="form-label"></label>
+        <input asp-for="Login" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label asp-for="BrokerUsername" class="form-label"></label>
+        <input asp-for="BrokerUsername" class="form-control" />
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="FirstName" class="form-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="MiddleName" class="form-label"></label>
+        <input asp-for="MiddleName" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="LastName" class="form-label"></label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+
+    <div class="col-md-3">
+        <label asp-for="Suffix" class="form-label"></label>
+        <input asp-for="Suffix" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Salutation" class="form-label"></label>
+        <input asp-for="Salutation" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Phone" class="form-label"></label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Fax" class="form-label"></label>
+        <input asp-for="Fax" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="DOB" class="form-label"></label>
+        <input asp-for="DOB" type="date" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="StreetNum" class="form-label"></label>
+        <input asp-for="StreetNum" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="StreetName" class="form-label"></label>
+        <input asp-for="StreetName" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="StreetType" class="form-label"></label>
+        <input asp-for="StreetType" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="UnitNum" class="form-label"></label>
+        <input asp-for="UnitNum" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="City" class="form-label"></label>
+        <input asp-for="City" class="form-control" />
+    </div>
+
+    <div class="col-md-3">
+        <label asp-for="StateCode" class="form-label"></label>
+        <input asp-for="StateCode" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Zip" class="form-label"></label>
+        <input asp-for="Zip" class="form-control" />
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Country" class="form-label"></label>
+        <input asp-for="Country" class="form-control" />
+    </div>
+
+    <div class="col-md-3">
+        <label asp-for="IdType" class="form-label"></label>
+        <input asp-for="IdType" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label asp-for="IdNum" class="form-label"></label>
+        <input asp-for="IdNum" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <label asp-for="IdPlace" class="form-label"></label>
+        <input asp-for="IdPlace" class="form-control" />
+    </div>
+    <hr />
+    <h4>Additional Information</h4>
+
+    <div class="col-md-4">
+        <label asp-for="SSN" class="form-label"></label>
+        <input asp-for="SSN" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="SSNType" class="form-label"></label>
+        <input asp-for="SSNType" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Capacity" class="form-label"></label>
+        <input asp-for="Capacity" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="DivReinv" class="form-label"></label>
+        <input asp-for="DivReinv" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="TaxLot" class="form-label"></label>
+        <input asp-for="TaxLot" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="DayTrader" class="form-label"></label>
+        <input asp-for="DayTrader" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="SolUnsol" class="form-label"></label>
+        <input asp-for="SolUnsol" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="DirShrDec" class="form-label"></label>
+        <input asp-for="DirShrDec" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="DirShrDecDtl" class="form-label"></label>
+        <input asp-for="DirShrDecDtl" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Citizenship" class="form-label"></label>
+        <input asp-for="Citizenship" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="LevelStocks" class="form-label"></label>
+        <input asp-for="LevelStocks" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="YearsStocks" class="form-label"></label>
+        <input asp-for="YearsStocks" class="form-control" type="number" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="LevelOptions" class="form-label"></label>
+        <input asp-for="LevelOptions" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="YearsOptions" class="form-label"></label>
+        <input asp-for="YearsOptions" class="form-control" type="number" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="LevelFixedInc" class="form-label"></label>
+        <input asp-for="LevelFixedInc" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="YearsFixedInc" class="form-label"></label>
+        <input asp-for="YearsFixedInc" class="form-control" type="number" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="TimeHorizon" class="form-label"></label>
+        <input asp-for="TimeHorizon" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="LiqNeeds" class="form-label"></label>
+        <input asp-for="LiqNeeds" class="form-control" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="MaritalStatus" class="form-label"></label>
+        <input asp-for="MaritalStatus" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Dependants" class="form-label"></label>
+        <input asp-for="Dependants" class="form-control" type="number" />
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Employer" class="form-label"></label>
+        <input asp-for="Employer" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="InvestmentObjective" class="form-label"></label>
+        <input asp-for="InvestmentObjective" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="RiskTolerance" class="form-label"></label>
+        <input asp-for="RiskTolerance" class="form-control" />
+    </div>
+
+    <hr />
+    <h4>CPA Information</h4>
+    <div class="col-md-4">
+        <label asp-for="CPAName" class="form-label"></label>
+        <input asp-for="CPAName" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="CPAEmail" class="form-label"></label>
+        <input asp-for="CPAEmail" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="CPAPhone" class="form-label"></label>
+        <input asp-for="CPAPhone" class="form-control" />
+    </div>
+    <div class="col-md-12">
+        <label asp-for="CPAAddr1" class="form-label"></label>
+        <input asp-for="CPAAddr1" class="form-control" />
+    </div>
+
+    <hr />
+    <h4>Attorney Information</h4>
+    <div class="col-md-4">
+        <label asp-for="AttorneyName" class="form-label"></label>
+        <input asp-for="AttorneyName" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="AttorneyEmail" class="form-label"></label>
+        <input asp-for="AttorneyEmail" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="AttorneyPhone" class="form-label"></label>
+        <input asp-for="AttorneyPhone" class="form-control" />
+    </div>
+    <div class="col-md-12">
+        <label asp-for="AttorneyAddr1" class="form-label"></label>
+        <input asp-for="AttorneyAddr1" class="form-control" />
+    </div>
+
+    <hr />
+    <h4>Joint Minor Info</h4>
+    <div class="col-md-4">
+        <label asp-for="JointMinorDOB" class="form-label"></label>
+        <input asp-for="JointMinorDOB" class="form-control" type="date" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="JointMinorCitizenship" class="form-label"></label>
+        <input asp-for="JointMinorCitizenship" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="JointMinorRelation" class="form-label"></label>
+        <input asp-for="JointMinorRelation" class="form-control" />
+    </div>
+
+    <div class="col-12 mt-3">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <div>@error.ErrorMessage</div>
+        }
+    </div>
+}

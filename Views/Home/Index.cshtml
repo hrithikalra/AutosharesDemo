@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <h4 class="text-success">Hello, @User.Identity.Name!</h4>
+        <p>You are logged in via Entra ID.</p>
+    }
+    else
+    {
+        <p>Please <a href="/MicrosoftIdentity/Account/SignIn">log in</a> to continue.</p>
+    }
+
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
